@@ -2,6 +2,7 @@ from dotenv import set_key
 from pathlib import Path
 from os import path
 
+
 def create_empty_config():
     config = {
         'SSB_TOKEN': '',
@@ -16,7 +17,6 @@ def create_empty_config():
     envfile.open(mode="w", encoding="utf-8")
     for key, value in config.items():
         set_key(envfile, key, value, quote_mode='never')
-
 
 
 if __name__ == '__main__':
