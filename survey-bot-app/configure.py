@@ -10,9 +10,7 @@ def create_empty_config():
         'SSB_ADM_PWD': '',
         'SSB_SYS_CMD': '',
         'SSB_SYS_PWD': '',
-        'SSB_LOG_PATH': '\logs',
         'SSB_ERR_MAIL': '',
-        'SSB_DB_HOST': ''
     }
     filename = path.join('.env')
     envfile = Path(filename)
