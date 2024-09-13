@@ -5,12 +5,12 @@ from os import path
 
 def create_empty_config():
     config = {
-        'SSB_TOKEN': '',
-        'SSB_DB': '',
-        'SSB_ADM_CMD': '',
-        'SSB_ADM_PWD': '',
-        'SSB_SYS_CMD': '',
-        'SSB_SYS_PWD': '',
+        'SSB_TOKEN': 'Токен бота',
+        'SSB_DB': 'Тип БД',
+        'SSB_ADM_CMD': 'Команда для получения прав администратора',
+        'SSB_ADM_PWD': 'Пароль администратора',
+        'SSB_SYS_CMD': 'Команда для получения прав супервайзера',
+        'SSB_SYS_PWD': 'Пароль супервайзера',
     }
     filename = path.join('.env')
     envfile = Path(filename)
